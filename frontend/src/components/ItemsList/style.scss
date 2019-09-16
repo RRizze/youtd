@@ -1,0 +1,19 @@
+@import '../../styles/mixins';
+
+.items-list {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.items-list__item {
+  width: 50%;
+  display: block;
+  position: relative;
+  padding: 0 2% 2%;
+  
+  @include mw(768) {
+    width: 100%;
+  }
+}

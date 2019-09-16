@@ -1,0 +1,137 @@
+@import '../../styles/mixins';
+
+.tower {
+  min-width: 320px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+  padding-bottom: 30px;
+  box-shadow: 4px 12px 10px #1c1821;
+
+  ul {
+    padding-top: 2px;
+  }
+}
+
+.value {
+  color: #a8a9e3;
+}
+
+.tower__table-header, .tower-ability__title {
+  color: #ffffff;
+  background-color: #1c1821;
+  padding: 2px 3px;
+  font-size: 16px;
+}
+
+.tower-ability__description, .ability-active__title {
+  font-size: 14px;
+}
+
+// 382f40
+.tower__name, .tower__description-title, .tower__abilities-title {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+.tower__specials-title {
+  padding-bottom: 2px;
+  padding-top: 2px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #1c1821;
+}
+
+.tower__general {
+  font-size: 14px;
+  width: 50%;
+  max-width: 315px;
+
+  @include mw(768) {
+    width: 100%;
+  }
+}
+
+.tower__img {
+  width: 100%;
+  display: flex;
+}
+
+.tower__icon {
+  width: 64px;
+  display: block;
+  position: relative;
+}
+
+.tower__header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.tower__name {
+  text-align: center;
+  width: 100%;
+  display: block;
+
+  h2 {
+    font-size: 18px;
+  }
+}
+
+.tower__features {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-right: 10px;
+}
+
+.tower__table {
+  tr:nth-child(odd) {
+    background: #382f40;
+  }
+}
+
+.tower__main {
+  width: 50%;
+  padding-right: 5px;
+  padding-left: 5px;
+  font-size: 14px;
+
+  @include mw(768) {
+    width: 100%;
+    padding-top: 20px;
+  }
+}
+
+.tower__description {
+  width: 85%;
+}
+
+th, td {
+  color: #cadce8;
+}
+
+.tower-ability__lvl-bonus-title {
+  color: #ffffff;
+  background-color: #1c1821;
+  padding: 2px 3px;
+}
+
+.tower-ability__lvl-bonus {
+  padding-left: 2%;
+}
+
+.tower-ability, .tower-ability__description, .tower-ability__lvl-bonus {
+  padding-bottom: 8px;
+}
+
+.lvl-bonus {
+  padding-top: 5px;
+}

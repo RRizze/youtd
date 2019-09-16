@@ -1,0 +1,41 @@
+version: '3.7'
+
+services:
+  db:
+    build: ./db
+    container_name: ytd_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 123123
+    volumes:
+      - ${DB_PATH_HOST}:/var/lib/mysql
+    ports:
+      - 3306:3306
+
+  api:
+    container_name: ytd_api
+    build:
+      context: ./backend/nodejs-v
+      target: developer
+    volumes:
+      - ./backend/nodejs-v:/usr/app
+    ports:
+      - 3000:3000
+    environment:
+      - DB_HOST=db
+    depends_on:
+      - db
+
+  front:
+    container_name: ytd_front
+    build:
+      context: ./frontend
+      target: developer
+    volumes:
+      - ./frontend:/usr/app
+      - ./node_modules:/usr/app/node_modules
+    ports:
+      - 3333:3333
+    environment:
+      - API_HOST=api
+

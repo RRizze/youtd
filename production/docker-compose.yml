@@ -1,0 +1,28 @@
+version: '3.6'
+
+services:
+  db:
+    image: scepterr/youtd:db
+    restart: always
+    volumes:
+      - ../databases:/var/lib/mysql
+    ports:
+      - 3306:3306
+
+  api:
+    image: scepterr/youtd:api
+    restart: always
+    environment:
+      - DB_HOST=db
+    depends_on:
+      - db
+    ports:
+      - 3000:3000
+
+  front:
+    image: scepterr/youtd:front
+    restart: always
+    ports:
+      - 80:80
+    depends_on:
+      - api

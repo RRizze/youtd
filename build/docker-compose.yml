@@ -1,0 +1,24 @@
+version: '3.7'
+
+services:
+  db:
+    build:
+      context: ../db
+      target: production
+    image: scepterr/youtd:db
+    environment:
+      MYSQL_ROOT_PASSWORD: 123123
+    volumes:
+      - ../databases:/var/lib/mysql
+
+  api:
+    build:
+      context: ../backend/nodejs-v
+      target: production
+    image: scepterr/youtd:api
+
+  front:
+    build:
+      context: ../frontend
+      target: production
+    image: scepterr/youtd:front

@@ -1,0 +1,9 @@
+.nav-item {
+  color: #cadce8;
+  text-transform: capitalize;
+  font-weight: bold;
+  transition: color .3s;
+  &:hover {
+    color: #ffffff;
+  }
+}

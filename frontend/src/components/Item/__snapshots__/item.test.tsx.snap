@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Item tests render correctly 1`] = `
+<div
+  className="item"
+  data-id={1}
+>
+  <div
+    className="item__general-info"
+  >
+    <div
+      className="item__header"
+    >
+      <figure>
+        <img
+          alt="item icon"
+          className="item__icon"
+          src="#"
+        />
+        <figcaption>
+          <h2
+            className="item__name"
+          >
+            dagger
+          </h2>
+        </figcaption>
+      </figure>
+    </div>
+    <div
+      className="item__features"
+    >
+      <table
+        className="item__table"
+      >
+        <thead>
+          <tr>
+            <th
+              className="item__table-header"
+              colSpan={2}
+            >
+              General Info
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>
+              Rarity
+            </th>
+            <td
+              style={
+                Object {
+                  "color": "#ffffff",
+                }
+              }
+            >
+              common
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Goldcost
+            </th>
+            <td>
+              10
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Wave Lvl Drop
+            </th>
+            <td>
+              10
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div
+    className="item__main-info"
+  >
+    <h2
+      className="item__main-info-title"
+    >
+      Main Info
+    </h2>
+    <div
+      className="item__description"
+    >
+      <h3
+        className="main-info-title"
+      >
+        Item Description
+      </h3>
+      <p>
+        desc
+        .
+      </p>
+    </div>
+    <div
+      className="item__specials"
+    >
+      <h3
+        className="main-info-title"
+      >
+        Specials: 
+      </h3>
+      <p>
+        spec
+      </p>
+    </div>
+    <div
+      className="item__abilities"
+    >
+      <h3
+        className="main-info-title"
+      >
+        Abilities: 
+      </h3>
+      <p>
+        abi
+      </p>
+    </div>
+  </div>
+</div>
+`;

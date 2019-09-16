@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavItem tests renders correctly 1`] = `
+<a
+  className="nav-item"
+  href="/about"
+  onClick={[Function]}
+>
+  About
+</a>
+`;

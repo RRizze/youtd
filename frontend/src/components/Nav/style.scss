@@ -1,0 +1,14 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-left: 10px;
+  .list {
+    margin: 0 auto;
+    padding: 0;
+  }
+  .list-item {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
