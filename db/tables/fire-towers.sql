@@ -595,7 +595,7 @@ INSERT INTO towers (
   ),
   (
     "Broken Fire Pit",
-    "http://localhost:3000/images/towers/fire/borken-fire-pit.png",
+    "http://localhost:3000/images/towers/fire/broken-fire-pit.png",
     "1",
     "70",
     "0",
@@ -630,7 +630,7 @@ INSERT INTO towers (
   ),
   (
     "Burning Fire Pit",
-    "http://localhost:3000/images/towers/fire/borken-fire-pit.png",
+    "http://localhost:3000/images/towers/fire/broken-fire-pit.png",
     "1",
     "200",
     "12",
@@ -665,7 +665,7 @@ INSERT INTO towers (
   ),
   (
     "Expanded Fire Pit",
-    "http://localhost:3000/images/towers/fire/borken-fire-pit.png",
+    "http://localhost:3000/images/towers/fire/broken-fire-pit.png",
     "1",
     "600",
     "26",
@@ -700,7 +700,7 @@ INSERT INTO towers (
   ),
   (
     "Wealthy Fire Pit",
-    "http://localhost:3000/images/towers/fire/borken-fire-pit.png",
+    "http://localhost:3000/images/towers/fire/broken-fire-pit.png",
     "1",
     "1300",
     "42",
@@ -735,7 +735,7 @@ INSERT INTO towers (
   ),
   (
     "Luxurious Fire Pit",
-    "http://localhost:3000/images/towers/fire/borken-fire-pit.png",
+    "http://localhost:3000/images/towers/fire/broken-fire-pit.png",
     "1",
     "2400",
     "59",

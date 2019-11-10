@@ -1,0 +1,23 @@
+{
+  "name": "youtd",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "main": "build/index.js",
+  "scripts": {
+    "test": "lerna run test --stream",
+    "build": "lerna run build --stream",
+    "update:version": "lerna version --no-push",
+    "start": "lerna run start --stream",
+    "start:back": "yarn workspace @backend/app start",
+    "start:front": "yarn workspace @frontend/app start",
+    "lint": "tslint --project tsconfig.json -c tslint.json frontend/**/*.ts*"
+  },
+  "workspaces": [
+    "backend/*",
+    "frontend/**"
+  ],
+  "devDependencies": {
+    "lerna": "^3.18.1"
+  }
+}

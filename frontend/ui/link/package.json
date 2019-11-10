@@ -1,0 +1,14 @@
+{
+  "name": "@ui/link",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "dependencies": {
+    "react-router-dom": "^5.1.2",
+    "styled-components": "^4.4.0",
+    "styled-system": "^5.1.2"
+  },
+  "devDependencies": {
+    "@types/react-router-dom": "^5.1.0"
+  }
+}

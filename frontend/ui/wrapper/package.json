@@ -1,0 +1,10 @@
+{
+  "name": "@ui/wrapper",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "dependencies": {
+    "styled-components": "^4.4.0",
+    "styled-system": "^5.1.2"
+  }
+}
