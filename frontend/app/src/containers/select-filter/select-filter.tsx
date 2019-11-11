@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Label, InputCheckbox } from '@ui/input';
 import { FlexBox } from '@ui/flex-box';
 import { Text } from '@ui/text';
-import { positive } from '../../utils';
+import { filterKeys } from '../../utils';
 
 const selectFilters = {
   rarity: ['COMMON', 'UNCOMMON', 'RARE', 'UNIQUE'],
@@ -16,8 +16,8 @@ const SelectFilter = ({ filterType, notFilterType, setFilter }) => {
 
   useEffect(() => {
     setFilter({
-      [filterType]: positive(checked),
-      [notFilterType]: positive(notChecked),
+      [filterType]: filterKeys(checked),
+      [notFilterType]: filterKeys(notChecked),
     });
   }, [checked, notChecked])
 
